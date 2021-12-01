@@ -34,8 +34,14 @@ const routes = [
         ],
     },
 
-    { path: '/login', component: SignIn },
-    { path: '/register', component: SignUp },
+    { path: '/login', component: SignIn, props: {
+        header: true,
+        content: true
+     } },
+    { path: '/register', component: SignUp, props: {
+        header: true,
+        content: true
+     } },
 
     { path: '/:path(.*)', component: NotFound },
 ]
