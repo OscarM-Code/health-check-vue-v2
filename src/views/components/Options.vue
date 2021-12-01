@@ -28,7 +28,7 @@ import Breadcrumb from '@/components/Breadcrumbs.vue'
         <div v-if="storeCat.length !== 0">
           <BaseCard>
             <div class="card-title mb-5 text-green-500">Modifier ou supprimer un lien/une requête</div>
-            <Form4 :categories="storeCat" ref="formDel"></Form4>
+            <Form4 :categories="storeCat"></Form4>
           </BaseCard>
         </div>
       </div>
@@ -56,9 +56,9 @@ export default {
     },
   },
   methods: {
-    // updateLinks(){
-    //   this.$refs.formDel.selectLink();
-    // },
+    updateLinks(){
+      this.$refs.formDel.selectLink();
+    },
   },
 }
 </script>
