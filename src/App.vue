@@ -26,8 +26,6 @@ export default {
     async setCat(){
       if (localStorage.getItem("token")) {
         if (this.links && this.links.length !== 0) return;
-        console.log("get links");
-        console.log(this.links);
         let userData = await VueJwtDecode.decode(localStorage.getItem("token"));
         let link;
         if (userData.role === "ROLE_ADMIN") {

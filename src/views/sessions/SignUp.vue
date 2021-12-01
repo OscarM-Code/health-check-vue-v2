@@ -78,7 +78,6 @@ export default {
                 })
                 .then(response => response.json())
                 .then(r => {
-                    console.log(r);
                     if (r.statusCode === 200) {
                         this.toast("Registered successfully", 'success');
                         this.$router.push(`/login?email=${this.mail}`);

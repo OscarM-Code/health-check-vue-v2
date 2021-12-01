@@ -8,7 +8,6 @@ let route = useRoute()
 
 let toggleSubMenu = (e) => {
     // let parent = e.target.dataset.item;
-    console.log(e.target)
 }
 
 onMounted(() => {
