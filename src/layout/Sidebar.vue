@@ -65,21 +65,11 @@ let handleWindowResize = () => {
                                 <p>Options</p>
                             </div>
                         </router-link>
-                        <div class="mt-10">
-                            <button
-                                class="
-                                    i-Power-2
-                                    text-3xl
-                                    border border-red-500
-                                    text-red-500
-                                    hover:bg-red-500 hover:text-white
-                                    rounded
-                                    p-3
-                                "
-                                @click="logout"
-                            >
-                            <p class="text-sm font-sans">Déconnexion</p>
-                            </button>
+                        <div class="nav-item" @click="logout">
+                            <div class="nav-item-hold">
+                                <i class="i-Power-2 text-3xl"></i>
+                                <p>Déconnexion</p>
+                            </div>
                         </div>
                     </ul>
                 </perfect-scrollbar>

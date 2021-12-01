@@ -1,1 +1,0 @@
-import{o as r,a as t,d as e,t as s}from"./vendor.dc6bd94e.js";const a={class:"breadcrumb flex items-end border-b border-gray-300 pb-4 mb-6"},o={class:"text-xl mr-1 font-semibold mr-2 dark:text-white"},d={props:{parentTitle:String,subParentTitle:String},setup(d){const n=d;return(d,b)=>(r(),t("div",a,[e("p",o,s(n.parentTitle),1)]))}};export{d as _};
