@@ -56,9 +56,9 @@ export default {
     },
   },
   methods: {
-    updateLinks(){
-      this.$refs.formDel.selectLink();
-    },
+    // updateLinks(){
+    //   this.$refs.formDel.selectLink();
+    // },
   },
 }
 </script>
