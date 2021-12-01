@@ -184,7 +184,7 @@ export default {
                 this.$router.push({
                   name: "Login",
                   params: {
-                    useMail: this.mail,
+                    userMail: this.mail,
                   },
                 });
                 this.validForm = true;
