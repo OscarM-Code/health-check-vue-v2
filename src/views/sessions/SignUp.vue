@@ -182,7 +182,7 @@ export default {
               if (r.statusCode === 200) {
                 this.toast("Le compte à bien été créé", "success");
                 this.$router.push({
-                  path: "/login",
+                  name: "Login",
                   params: {
                     useMail: this.mail,
                   },

@@ -34,11 +34,11 @@ const routes = [
         ],
     },
 
-    { path: '/login', component: SignIn, props: {
+    { path: '/login', name: "Login", component: SignIn, props: {
         header: true,
         content: true
      } },
-    { path: '/register', component: SignUp, props: {
+    { path: '/register', name: "Register", component: SignUp, props: {
         header: true,
         content: true
      } },
