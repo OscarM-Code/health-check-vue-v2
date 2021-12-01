@@ -9,7 +9,7 @@ const routes = [
         path: '/',
         name: 'Home',
         component: () => import('../layout/index.vue'),
-        redirect: '/dashboards/dashboard-version-one',
+        redirect: '/dashboard',
         meta: {
             title: 'Home',
         },
