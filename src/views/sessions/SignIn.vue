@@ -105,16 +105,13 @@ export default {
   name: "Login",
   data() {
     return {
-      mail: this.userMail ? this.userMail : null,
+      mail: this.$route.params && this.$route.params.userMail
+        ? this.$route.params.userMail
+        : null,
       password: null,
       verif: true,
       errorMessage: null,
     };
-  },
-  props: {
-    userMail: {
-      type: String,
-    },
   },
   methods: {
     login() {
