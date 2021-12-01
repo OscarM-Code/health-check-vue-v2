@@ -239,10 +239,6 @@ export default {
                 }, 3000)
             }
         },
-        toggleCatDelForm() {
-            this.$refs.delCat.classList.toggle('active')
-            this.$refs.btnDelCat.classList.toggle('active')
-        },
         logout() {
             localStorage.removeItem('token')
             this.$router.push('/login')

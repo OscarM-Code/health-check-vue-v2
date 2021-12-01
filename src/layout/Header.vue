@@ -21,9 +21,6 @@ const sideBarToggle = () => {
 <template>
     <div class="header-wrapper flex bg-white justify-between px-4">
         <div class="flex items-center">
-            <div class="logo flex justify-center">
-                <img src="/images/cardiogram.png" alt="AatroX" class="w-14 mr-8"/>
-            </div>
             <div class="mx-0 sm:mx-3">
                 <button
                     @click="sideBarToggle"
@@ -65,7 +62,7 @@ const sideBarToggle = () => {
                     p-1
                     md:mr-2
                 "
-                href="https://github.com/OscarM-Code/health-check-vue"
+                href="https://github.com/OscarM-Code/health-check-vue-v2"
                 target="_blank"
             >
                 <svg
@@ -118,7 +115,7 @@ const sideBarToggle = () => {
                         focus:outline-none
                     "
                 >
-                    <p>{{ userData.first_name + " " + userData.last_name }}</p>
+                    <p class="group flex  items-center w-full px-4 py-2">{{ userData.first_name + " " + userData.last_name }}</p>
                     <div class="" @click="logout">
                         <MenuItem v-slot="{ active }">
                             <button
@@ -129,7 +126,7 @@ const sideBarToggle = () => {
                                     'group flex  items-center w-full px-4 py-2 text-sm',
                                 ]"
                             >
-                                Se déconnecter
+                                <p class="text-sm font-sans ml-4">Se déconnecter</p>
                             </button>
                         </MenuItem>
                     </div>

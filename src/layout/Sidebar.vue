@@ -68,15 +68,17 @@ let handleWindowResize = () => {
                         <div class="mt-10">
                             <button
                                 class="
+                                    i-Power-2
+                                    text-3xl
                                     border border-red-500
                                     text-red-500
                                     hover:bg-red-500 hover:text-white
                                     rounded
-                                    px-2
+                                    p-3
                                 "
                                 @click="logout"
                             >
-                                Déconnexion
+                            <p class="text-sm font-sans">Déconnexion</p>
                             </button>
                         </div>
                     </ul>
