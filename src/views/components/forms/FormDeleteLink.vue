@@ -62,7 +62,7 @@
                     v-model="selectedLink"
                     @change="changeData"
                     class="
-                        w-auto
+                        w-full
                         h-10
                         pl-3
                         pr-6
